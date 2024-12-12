@@ -67,7 +67,7 @@ void cursor_position_callback(GLFWwindow* window, double xpos, double ypos)
 	if (rotating)
 	{
 		float xoffset = xpos - lastX;
-		float yoffset = lastY - ypos; // Reversed since y-coordinates range from bottom to top
+		float yoffset = lastY - ypos; // reversed since y-coordinates range from bottom to top
 		lastX = xpos;
 		lastY = ypos;
 
