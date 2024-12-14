@@ -1,0 +1,10 @@
+^F:\VISUAL STUDIO LIBRARIES\GLEW-2.2.0\BUILD\CMAKE\BUILD\CMAKEFILES\4F19F927169295B6017070CC4C58E3E4\GENERATE.STAMP.RULE
+setlocal
+F:\bin\cmake.exe "-SF:/Visual Studio Libraries/glew-2.2.0/build/cmake" "-BF:/Visual Studio Libraries/glew-2.2.0/build/cmake/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "F:/Visual Studio Libraries/glew-2.2.0/build/cmake/build/glew.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
