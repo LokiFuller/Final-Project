@@ -84,11 +84,11 @@ void cursor_position_callback(GLFWwindow* window, double xpos, double ypos)
 	else if (translating)
 	{
 		float xoffset = xpos - lastX;
-		float yoffset = lastY - ypos; // Reversed
+		float yoffset = lastY - ypos;
 		lastX = xpos;
 		lastY = ypos;
 
-		float translationSensitivity = 0.005f; // Adjust as needed
+		float translationSensitivity = 0.005f;
 		translateX += xoffset * translationSensitivity;
 		translateY += yoffset * translationSensitivity;
 	}

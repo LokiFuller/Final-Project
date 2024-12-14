@@ -53,5 +53,4 @@ void main()
     }
 
 	fragment_colour.a = 1.0; // full opacity.
-
 }

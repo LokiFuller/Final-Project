@@ -24,11 +24,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Downloads\stb_image.h" />
     <ClInclude Include="fea.h" />
     <ClInclude Include="fea_stress.h" />
     <ClInclude Include="load_model_meshes.h" />
     <ClInclude Include="shader_configure.h" />
+    <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="shader_glsl.frag" />
@@ -121,12 +121,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Assimp\include;F:\Visual Studio Libraries\glm-master\include;F:\Visual Studio Libraries\glew-2.2.0\include\GL;F:\Visual Studio Libraries\glfw-3.4.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Loki\source\repos\Final-Project\Libraries\glm-master\glm;C:\Users\Loki\source\repos\Final-Project\Libraries\glfw-3.4.bin.WIN64\include;C:\Users\Loki\source\repos\Final-Project\Libraries\glew-2.2.0\include\GL;C:\Users\Loki\source\repos\Final-Project\Libraries\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>F:\Assimp\lib\x64;F:\Visual Studio Libraries\glew-2.2.0\build\cmake\build\lib\Release;F:\Visual Studio Libraries\glfw-3.4.bin.WIN64\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)Libraries\Assimp\lib\x64;$(ProjectDir)Libraries\glew-2.2.0\build\cmake\build\lib\Release;$(ProjectDir)Libraries\glfw-3.4.bin.WIN64\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;libglew32.lib;glew32.exp;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -138,14 +138,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Assimp\include;F:\Visual Studio Libraries\glm-master\include;F:\Visual Studio Libraries\glew-2.2.0\include\GL;F:\Visual Studio Libraries\glfw-3.4.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Loki\source\repos\Final-Project\Libraries\glm-master\glm;C:\Users\Loki\source\repos\Final-Project\Libraries\glfw-3.4.bin.WIN64\include;C:\Users\Loki\source\repos\Final-Project\Libraries\glew-2.2.0\include\GL;C:\Users\Loki\source\repos\Final-Project\Libraries\Assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>F:\Assimp\lib\x64;F:\Visual Studio Libraries\glew-2.2.0\build\cmake\build\lib\Release;F:\Visual Studio Libraries\glfw-3.4.bin.WIN64\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)Libraries\Assimp\lib\x64;$(ProjectDir)Libraries\glew-2.2.0\build\cmake\build\lib\Release;$(ProjectDir)Libraries\glfw-3.4.bin.WIN64\lib-vc2022;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;libglew32.lib;glew32.exp;assimp-vc143-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
